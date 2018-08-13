@@ -1,4 +1,4 @@
-package com.nto.docker_mysql.api;
+package com.nto.dockermysql.api;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HomController {
+public class HomeController {
 	
 	@Autowired
 	Environment environment;
