@@ -1,4 +1,4 @@
-package com.nto.docker_mysql;
+package com.nto.dockermysql;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
