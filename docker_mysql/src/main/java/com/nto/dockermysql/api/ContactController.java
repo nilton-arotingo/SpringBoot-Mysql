@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.validation.Valid;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -26,8 +28,17 @@ public class ContactController {
 	@Autowired
 	private ContactRepository contactRepository;
 	
+	private static final Logger logger = LoggerFactory.getLogger(ContactController.class);
+	
 	@GetMapping(value="/list")
 	public List<Contact> listContact() {
+		
+		logger.info("Este es un mensaje de INFO");
+		logger.warn("Este es un mensaje de WARN");
+		logger.error("Este es un mensaje de ERROR");
+		logger.debug("Este es un mensaje de DEBUG");
+		logger.trace("Este es un mensaje de TRACE");
+		
 		return contactRepository.findAll();
 	}
 	

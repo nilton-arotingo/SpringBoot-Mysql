@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @ConfigurationProperties
-@PropertySource("classpath:application-local.properties")
+@PropertySource("classpath:application-dev.properties")
 public class AppConfigProperties {
 
 	@Value("${db_driver}")
